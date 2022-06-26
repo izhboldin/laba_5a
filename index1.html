@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <title>Les0</title>
+</head>
+
+<body>
+  <header>
+    <img src="img/logo.png" alt="" class="imgtop">
+    <h1>
+      <a class="silki" href="index.html">Головна </a>
+    </h1>
+  </header>
+  <div style="flex-direction: column;" class="boxwrapper">
+    <div class="box">
+      <h2 class="g2">Контакти</h2>
+      <h3>тел. +380950964532</h3>
+      <h3>пошта ijboldin.sasha123@gmail.com</h3>
+    </div>
+    <div class="box">
+      <h2 class="g2">Про нас</h2>
+      <h3>"izhboldin prog" - це компанія, яка працює вже понад 5 років, та за цей час мільйони людей залишилися з
+        гарними емоціями. Ми сподіваємося що ви приєднаєтесь до цього мільйону людей.</h3>
+    </div>
+  </div>
+<form action=indeks.php method=post>
+  Уведіть ім'я та Прізвище <input type=text name=login>
+  <br> <input type=submit name=ok value=Відправити>
+    <?php 
+      $name = $_REQUEST["login"]; // одержання даних з поля login 
+      echo "<br>Ви ввели ім'я та Прізвище $name ";
+      ?>
+</form>
+</body>
+
+</html>

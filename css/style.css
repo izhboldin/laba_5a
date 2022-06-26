@@ -1,0 +1,74 @@
+body {
+  text-align: center;
+  background-color: #e1bee7;
+}
+.zagol{
+  margin: 10px;
+  position: relative;
+  text-align: center;
+}
+.silki{
+color: #000000;
+text-decoration: none;
+}
+.imgtop{
+  margin-top: 1%;
+  width: 363px;
+  height: 90px;
+  /*position: relative;*/
+}
+.box{
+  border: 2px solid #000;
+    background-color: #ce93d8;
+    width: 800px;
+    margin: 20px ;
+
+}
+h2{
+  margin-top: 7px;
+}
+.g2,
+h3{
+  font-size: 250%;
+}
+.boxwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main{
+  border: 1px solid #000;
+  position: sticky;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  float: left;
+  background-color: white;
+}
+.mat{
+  height: 480px;
+}
+main .image,
+main .text{
+  width: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+main .image img{
+width: 100%;
+
+}
+main .text{
+  background:rgba(46, 45, 45, 0.9);
+  top: 0;
+  height: 100%;
+  left: 100%;
+  color: white;
+}
+main:hover .text{
+  top: 0;
+  left: 0;
+}
